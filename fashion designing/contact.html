@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<style>
+  .button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: blanchedalmond;
+    color: #000;
+    cursor: pointer;
+  }
+  #one {
+    width: 50%;
+    height: 30%;
+
+    float: right;
+    color: rgb(59, 36, 5);
+    margin-right: 100%;
+    margin-bottom: 10%;
+    /* margin-top: 20% ; */
+    text-align: right;
+    font-style: normal;
+  }
+
+  h5 {
+    color: rgb(247, 153, 31);
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h2 {
+    text-align: center;
+    /* padding: 39px; */
+  }
+
+  .navbar {
+    background-image: url(white-cosmetic-products-green-leaves_14098-23.jpg);
+    /* Path to your image */
+    background-size: cover;
+    /* Cover the entire navbar */
+    background-position: center;
+    /* Center the image */
+    height: 400px;
+  }
+
+  #navbar {
+    width: 150px;
+    height: 200px;
+    background-image: url(white-cosmetic-products-green-leaves_14098-23.jpg);
+    border-radius: 30%;
+    animation: anim 6s;
+    position: relative;
+    animation-iteration-count: infinite;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    /* Text color */
+    font-size: 20px;
+    /* Font size */
+    margin-bottom: 300px;
+  }
+
+  img {
+    border-top-left-radius: 40%;
+  }
+
+  .container {
+    /* background-color:burlywood ; */
+    background-repeat: no-repeat;
+    opacity: 100%;
+  }
+
+h1{
+  padding-top:80px ;
+}
+  h3 {
+    color: black;
+    padding-top: 70px;
+    margin-left: auto;
+  }
+  .footer-section {
+    background-color: rgb(160, 95, 9);
+    padding: 70px 0;
+    color: #fff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .footer-link h2 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .footer-link p {
+    color: #fff;
+    line-height: 20px;
+  }
+
+  .social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+  }
+
+  .social-icon li {
+    margin-right: 10px;
+  }
+
+  .social-icon li a {
+    color: #fff;
+    font-size: 20px;
+    /* Adjusted size for better fit */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #333;
+    /* Default background for icons */
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .social-icon li a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icon .fa-twitter {
+    background: #1da1f2;
+  }
+
+  .social-icon .fa-whatsapp {
+    background: #25d366;
+  }
+
+  .social-icon .fa-facebook {
+    background: #1877f2;
+  }
+
+  .social-icon .fa-linkedin {
+    background: #0077b5;
+  }
+
+  .footer-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .footer-menu li {
+    margin-bottom: 10px;
+  }
+
+  .footer-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-menu li a i {
+    margin-right: 10px;
+  }
+
+  .footer-contact {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .footer-contact li {
+    margin-bottom: 10px;
+  }
+
+  .footer-contact i {
+    margin-right: 10px;
+  }
+
+  .newsletter p {
+    margin-bottom: 10px;
+  }
+
+  .newsletter input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    /* Added margin for better spacing */
+  }
+
+  .newsletter button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: blanchedalmond;
+    color: #000;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .footer-link {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container-fluid">
+      <a class='navbar-brand text-info ' href='/'>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse text-center mx-5 " id="navbarSupportedContent">
+      <ul id="o" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a aria-current='page' class='nav-link  mx-2' href='/'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class='nav-link mx-2' href='about us.html'>About</a>
+        </li>
+        <li class="nav-item">
+          <a class='nav-link mx-2' href='services.html'>Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu mx-2">
+            <li><a class='dropdown-item' href='collections.html'>Collections </a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class='nav-link mx-2' href='contact.html'>Contact</a>
+        </li>
+        <li class="nav-item">
+          <a aria-disabled='true' class='nav-link  bg-warning' href='/joinnow'>JoinNow</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="one">
+      <div class="card-img-overlay">
+       
+
+        <h1> Contact...<br>
+          <br>Clothing <br>that makes<br> you feel beautiful and confident.</h1>
+      </div>
+    </div>
+  </div>
+  <!--navbar------->
+
+  <h5>Interesting in working with us? Contact us directly</h5>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Form Column -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-4">
+            <label for="inputFirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your first name">
+          </div>
+          <div class="row">
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
+          </div>
+
+          <div class="mb-3">
+            <label for="inputState" class="form-label">Select Services</label>
+            <select id="inputState" class="form-select">
+              <option>Technical Drawing</option>
+              <option>3D German Design</option>
+              <option>Fashion Illustration</option>
+              <option>Pattern Making</option>
+              <option>Fashion Consulting</option>
+            </select>
+          </div>
+          <br>
+          <button>Contact Us</button>
+        </form>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6">
+        <img src="i90.jpg" data-aos-duration="1000px" data-aos="zoom-in" data-aos="fade-left" data-aos="fade-right"
+          data-aos-delay="900px" class="img-fluid" alt="Descriptive alt text">
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS (optional) --
+
+  <!-----------MAP-->
+  
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+ <div class="footer-section">
+  <div class="container">
+    <div class="footer-link">
+      <h2>Nancy Fashion</h2>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+      <ul class="social-icon">
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-link">
+      <h2>Featured Links</h2>
+      <ul class="footer-menu">
+        <li><a href="#"><i class="fa fa-angle-right"></i> Dressing Style</a></li>
+        <li><a href="#"><i class="fa fa-angle-right"></i> 3D designing</a></li>
+        <li><a href="#"><i class="fa fa-angle-right"></i> Cat Walk</a></li>
+        <li><a href="#"><i class="fa fa-angle-right"></i>Fashion Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-link">
+      <h2>Contact Info</h2>
+      <ul class="footer-contact">
+        <li><i class="fa fa-envelope-o"></i> <span>E-mail: <a href="mailto:info@dezven.com"
+              style="color: #fff;">info@dezven.com</a></span></li>
+        <li><i class="fa fa-whatsapp"></i> <span>What-App: +91 -123 456 789</span></li>
+        <li><i class="fa fa-fax"></i> <span>Contact No.: +91 -123 4567890</span></li>
+        <li><i class="fa fa-globe"></i> <span>Website: <a href="https://www.dezven.com"
+              style="color: #fff;">https://www.dezven.com</a></span></li>
+      </ul>
+    </div>
+    <div class="footer-link newsletter">
+      <h2>Newsletter</h2>
+      <p>Welcome To Fashion Fashion-Designing</p>
+      <input type="text" name="email" placeholder="E-mail">
+      <button>Subscribe Now</button>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

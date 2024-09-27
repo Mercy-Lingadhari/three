@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+   
+
+ 
+</head>
+<style>
+    p {
+        color: whitesmoke;
+        font-weight: 500;
+    }
+
+    #one {
+        width: 50%;
+        height: 30%;
+        float: right;
+        margin-right: 100%;
+        margin-bottom: 10%;
+        /* margin-top: 20% ; */
+        font-style: oblique;
+    }
+
+    h3 {
+        text-align: center;
+        color: black;
+    }
+
+
+    h1 {
+        color: black;
+        
+        padding-top: 110px;
+    }
+
+    text:hover {
+        background-color: goldenrod;
+        transform: all 2s;
+    }
+
+   
+
+    .navbar {
+    background-image: url(white-cosmetic-products-green-leaves_14098-23.jpg);
+    /* Path to your image */
+    background-size: cover;
+    /* Cover the entire navbar */
+    background-position: center;
+    /* Center the image */
+    height: 400px;
+    backdrop-filter: blur(8px);
+  }
+
+  #navbar {
+    width: 150px;
+    height: 200px;
+    background-image: url(white-cosmetic-products-green-leaves_14098-23.jpg);
+    border-radius: 30%;
+    animation: anim 6s;
+    position: relative;
+    animation-iteration-count: infinite;
+    backdrop-filter: blur(8px);
+    height: 400px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    /* Text color */
+    font-size: 20px;
+    /* Font size */
+    margin-bottom: 300px;
+  }
+
+    .navbar a:hover {
+        color: white;
+    }
+
+    /* styles.css */
+    .card-body {
+        background-color: #fff;
+        /* Background color of the card */
+        border: 1px solid burlywood;
+        /* Border color and width */
+        border-radius: 12px;
+        /* Rounds the corners of the card */
+        padding: 20px;
+        /* Space inside the card */
+        max-width: 400px;
+        /* Optional: sets a maximum width for the card */
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        /* Image and content */
+        gap: 20px;
+        /* Space between image and content */
+        align-items: center;
+        /* Aligns items vertically center */
+    }
+
+    .card-body:hover {
+        background-color: rgb(255, 192, 203);
+    }
+
+    h2 {
+    text-align: center;
+        
+    }
+
+    .container-fluid:hover {
+        padding-top: 20px;
+        transition-duration: 0.900s;
+        transform: scale(15px);
+        -ms-zoom-animation: calc(2px);
+         background-image: url(freepic9.jpg); 
+         background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
+    .footer-section {
+    background-color: rgb(160, 95, 9);
+    padding: 70px 0;
+    color: #fff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .footer-link h2 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .footer-link p {
+    color: #fff;
+    line-height: 20px;
+  }
+
+  .social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+  }
+
+  .social-icon li {
+    margin-right: 10px;
+  }
+
+  .social-icon li a {
+    color: #fff;
+    font-size: 20px;
+    /* Adjusted size for better fit */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #333;
+
+  }
+
+  .social-icon li a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icon .fa-twitter {
+    background: #1da1f2;
+  }
+
+  .social-icon .fa-whatsapp {
+    background: #25d366;
+  }
+
+  .social-icon .fa-facebook {
+    background: #1877f2;
+  }
+
+  .social-icon .fa-linkedin {
+    background: #0077b5;
+  }
+
+  .footer-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .footer-menu li {
+    margin-bottom: 10px;
+  }
+
+  .footer-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-menu li a i {
+    margin-right: 10px;
+  }
+
+  .footer-contact {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .footer-contact li {
+    margin-bottom: 10px;
+  }
+
+  .footer-contact i {
+    margin-right: 10px;
+  }
+
+  .newsletter p {
+    margin-bottom: 10px;
+  }
+
+  .newsletter input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    /* Added margin for better spacing */
+  }
+
+  .newsletter button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: blanchedalmond;
+    color: #000;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .footer-link {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about us.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid">
+        <div class="one">
+            <div class="card-img-overlay">
+              
+                <h1>Services...<br>
+                    <br>Clothing <br>that makes<br> you feel beautiful and confident.</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="two">
+        <h2>We Provide Best Services For You</h2>
+        <h3>Providing fashion brands at all levels with guidance</h3>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="fashion-designer-3.jpg" class="card-img-top"
+                    style="border-top-left-radius:50%; border-top-right-radius: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Fashion Consulting</h5>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="b.jpg" class="card-img-top" style="border-top-left-radius:50%; border-top-right-radius: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Full Design Process</h5>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content...
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="fashion-designer-1.jpg" class="card-img-top"
+                    style="border-top-left-radius:50%; border-top-right-radius: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">3D Garment Design</h5>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="p.jpg" class="card-img-top" style="border-top-left-radius:50%; border-top-right-radius: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Fashion Illustration</h5>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="k.jpg" class="card-img-top" style="border-top-left-radius:50%; border-top-right-radius: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Pattern Making</h5>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="fashion-designer-2.jpg" style="border-top-left-radius:50%; border-top-right-radius: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Technical Drawing</h5>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+        <h3>Why Choose Us <br>Clothing that makes you feel beautiful and confident.</h3>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Innovation..!</h4>
+                <p>Fashion designers play a crucial role in shaping trends and styles <br>by drawing inspiration
+                    from sources, exploring new </p>
+                <h4>High Quality Crafting</h4>
+                <p>A lot of information is also beneficial for sales so that all questions the customer drawing
+                    inspiration
+                    from sources, exploring new </p>
+            </div>
+            <div class="col-md-3">
+                <h4>Creative Ideas</h4>
+                <p>Be updated with the recent trends in the Fashion industry. ... <br>
+                    Show them the benefits, not your product's specification. ...
+                </p>
+                <h4>Expert Team</h4>
+                <p>Be updated with the recent trends in the Fashion industry. ... <br>
+                    Show them the benefits, not your product's specification. ...
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="1o.avif"
+                    style="border-top-left-radius:90%; border-bottom-right-radius: 20%;       border-top-right-radius: 20%;">
+
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="container">
+              <div class="footer-link">
+                <h2>Nancy Fashion</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+                  literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+                <ul class="social-icon">
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+              <div class="footer-link">
+                <h2>Featured Links</h2>
+                <ul class="footer-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Dressing Style</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> 3D designing</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Cat Walk</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Fashion Design</a></li>
+                </ul>
+              </div>
+              <div class="footer-link">
+                <h2>Contact Info</h2>
+                <ul class="footer-contact">
+                  <li><i class="fa fa-envelope-o"></i> <span>E-mail: <a href="mailto:info@dezven.com"
+                        style="color: #fff;">info@dezven.com</a></span></li>
+                  <li><i class="fa fa-whatsapp"></i> <span>What-App: +91 -123 456 789</span></li>
+                  <li><i class="fa fa-fax"></i> <span>Contact No.: +91 -123 4567890</span></li>
+                  <li><i class="fa fa-globe"></i> <span>Website: <a href="https://www.dezven.com"
+                        style="color: #fff;">https://www.dezven.com</a></span></li>
+                </ul>
+              </div>
+              <div class="footer-link newsletter">
+                <h2>Newsletter</h2>
+                <p>Welcome To Fashion Fashion-Designing</p>
+                <input type="text" name="email" placeholder="E-mail">
+                <button>Subscribe Now</button>
+              </div>
+            </div>
+          </div>
+
+
+</body>
+
+</html>

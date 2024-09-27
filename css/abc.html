@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-style: italic;
+            background-color: white;
+            color:black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container {
+            text-align: center;
+            width: 1200px;
+            height: 300px;
+            background-color: palevioletred;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .one {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            height: 300px;
+            background-color: white;
+       
+        }
+        .a {
+            padding: 10px;
+            border-radius: 10px;
+            width: 280px;
+            height: 150px;
+            text-align: center;
+        
+            
+        
+        }
+ 
+        .a:hover{
+            border-radius: 30%;
+    
+        }
+        h3{
+            color:black;
+            
+        }
+        img{
+            display: inline;
+            height: 200px;
+            width: 200px;
+        
+        }
+
+        @media  screen and (max-width:999px) {
+            .container{
+                width: 100%;
+                margin: auto;
+                height: auto;
+            }
+            
+        }
+        @media screen and (max-width:700px) {
+            .one{
+                width: 100%;
+            }
+            .a{
+                width: 100%;
+            }
+            
+        }
+       </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Say Hello TO Our Rock Star Team...!</h1>
+    
+        <div class="one ">
+            <div class="a">
+                <img src="team1.jpg">
+            </div>
+
+            <div class="a">
+                <img src="team2.jpg">
+            </div>
+
+            <div class="a">
+               <img src="team3.jpg">
+            </div>
+
+         
+
+        </div>
+    </div>
+</body>
+</body>
+</html>

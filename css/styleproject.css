@@ -1,0 +1,39 @@
+.container{
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  background-color: plum;
+  font-style:italic;
+  text-align:center;
+     }
+     .left{
+       width: 500px;
+       height: 500px;
+       transition: 2s;
+     }
+     .right{
+       width: 500px;
+       height: 500px;
+     }
+     img{
+       width: 500px;
+       height: 500px;
+       padding: 5px;
+       
+       background-color:plum ;
+     }
+     h1{
+       width: 200px;
+       height: 100px;
+       margin: auto;
+       margin-top: 100px;
+       background-color: plum;
+     }
+     .a{
+       background-color: plum;
+     }
+  
+  

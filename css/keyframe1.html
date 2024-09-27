@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@keyframes anim{
+0%{left: 0px; top: 0px; }
+25%{left: 500px; top: 0px;}
+50%{left: 500px; top: 500px;}
+75%{left: 0px; top: 500px;}
+100%{left: 0px; top: 0px;}
+}
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 50%;
+  animation: anim 2s;
+  position: relative;
+  animation-iteration-count: infinite;
+}
+</style>
+</head>
+<body>
+<div id="box"></div>
+
+</body>
+</html>

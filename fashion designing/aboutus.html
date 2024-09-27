@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Site Metas -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
+    <title> Cafeesa| PRAROZ </title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            background-image: url(white-cosmetic-products-green-leaves_14098-23.jpg);
+            /* Path to your image */
+            background-size: cover;
+            /* Cover the entire navbar */
+            background-position: center;
+            /* Center the image */
+            height: 400px;
+        }
+
+        #navbar {
+            width: 150px;
+            height: 200px;
+            background-image: url(white-cosmetic-products-green-leaves_14098-23.jpg);
+            border-radius: 30%;
+            animation: anim 6s;
+
+            animation-iteration-count: infinite;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            /* Text color */
+            font-size: 20px;
+            /* Font size */
+            margin-bottom: 300px;
+        }
+
+        #one {
+            width: 50%;
+            height: 30%;
+
+            float: right;
+
+            margin-right: 100%;
+            margin-bottom: 10%;
+            /* margin-top: 20% ; */
+            text-align: right;
+            
+        }
+
+        #red {
+            background-color: wheat;
+            transition: all 2s;
+        }
+
+        #red:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        #pink {
+            width: 40%;
+            height: 40%;
+
+            margin-left: 60%;
+            float: right;
+            margin-bottom: 10%;
+            margin-top: 20%;
+
+        }
+
+        #blue {
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            padding-top: 30px;
+            text-align: center;
+            color: black;
+        }
+h3{
+    color: rgb(150, 89, 10);
+}
+        h5 {
+            color: white;
+        }
+
+        h1 {
+            color: black;
+            padding-top: 90px;
+        }
+
+       
+
+        h4 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        .container-fluid {
+            padding-top: 20px;
+        }
+
+        p {
+            font-style: oblique;
+        }
+
+        .container-fluid:hover {
+            /* padding-top: 20px; */
+            transition-duration: 0.1000s;
+            transform: scale(15px);
+            -ms-zoom-animation: calc(10px);
+            /* background-image: url(freepic9.jpg); */
+
+             /* background-image: url(kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.jpg);    */
+             /* background-color: paleturquoise;  */
+            background-repeat: no-repeat;
+            width: 900px;
+        }
+
+        #im {
+            margin-top: 100px;
+        }
+        .footer-section {
+            background-color:rgb(160, 95, 9);
+            padding: 70px 0;
+            color: #fff;
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+ 
+        .footer-link {
+            padding: 0 15px;
+            box-sizing: border-box;
+            flex: 1;
+        }
+ 
+        .footer-link h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+ 
+        .footer-link p {
+            color: #fff;
+            line-height: 20px;
+        }
+ 
+        .social-icon {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+        }
+ 
+        .social-icon li {
+            margin-right: 10px;
+        }
+ 
+        .social-icon li a {
+            color: #fff;
+            font-size: 20px; /* Adjusted size for better fit */
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            background: #333; /* Default background for icons */
+            transition: background 0.3s, transform 0.3s;
+        }
+ 
+        .social-icon li a:hover {
+            transform: scale(1.1);
+        }
+ 
+        .social-icon .fa-twitter {
+            background: #1da1f2;
+        }
+ 
+        .social-icon .fa-whatsapp {
+            background: #25d366;
+        }
+ 
+        .social-icon .fa-facebook {
+            background: #1877f2;
+        }
+ 
+        .social-icon .fa-linkedin {
+            background: #0077b5;
+        }
+ 
+        .footer-menu {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+ 
+        .footer-menu li {
+            margin-bottom: 10px;
+        }
+ 
+        .footer-menu li a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .footer-menu li a i {
+            margin-right: 10px;
+        }
+ 
+        .footer-contact {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+ 
+        .footer-contact li {
+            margin-bottom: 10px;
+        }
+ 
+        .footer-contact i {
+            margin-right: 10px;
+        }
+ 
+        .newsletter p {
+            margin-bottom: 10px;
+        }
+ 
+        .newsletter input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px; /* Added margin for better spacing */
+        }
+ 
+        .newsletter button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: blanchedalmond;
+            color: #000;
+            cursor: pointer;
+        }
+ 
+        @media (max-width: 768px) {
+            .footer-link {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">
+            <a class='navbar-brand text-info ' href='/'>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse text-center mx-5 pt-100" id="navbarSupportedContent">
+            <ul id="o" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current='page' class='nav-link  mx-2' href='/'>HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class='nav-link mx-2' href='about us.html'>ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class='nav-link mx-2' href='services.html'>Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class='nav-link mx-2' href='collections.html'>Collections</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class='nav-link mx-2' href='contact.html'>Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-disabled='true' class='nav-link  bg-warning' href='joinnow'>JoinNow</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="one">
+            <div class="card-img-overlay" id="three">
+              
+
+                <h1>About Us...<br>
+                    <br>Clothing <br>that makes<br> you feel beautiful and confident.</h1>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <br>
+    <div class="container-fluid">
+        <h2>
+            Who we are<br>
+            Expert wardrobe styling from the industry's top stylists.</h2>
+            <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Personalized Design</h3>
+                <p> A Personalized Design approach helps us envision abilities as a spectrum and develop solutions
+                    geared
+
+                    in marketing involves leading and innovating to create new trends that resonate with
+                    diagnosis but are still, humanly so, vastly different from each other.</p>
+                <h3>Trendsetting Designs</h3>
+                <p>Trendsetting to create new trends that resonate with
+                    involves leading and innovating to
+                    create
+                    new trends that resonate with
+                    market dynamics and introducing fresh ideas rather than following fads.</p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="couple.jpg" width="290px" id="im" data-aos-duration="1000px" data-aos="zoom-in"
+                    data-aos="fade-left" data-aos="fade-right">
+            </div>
+            <div class="col-md-4">
+                <h3>Collaborative Approach</h3>
+                <p>A collaborative (or cooperative) learning approach involves pupils working together on activities or
+                    learning tasks in a group small or work together on a shared task
+                    It's about understanding
+                    market dynamics and introducing fresh ideas rather than following fads.</p>
+
+                <h3>Passion for Fashion</h3>
+                <p>In a general way, fashion relates to the trend that you or anyone follow right from dresses to walk.
+                    ... So if still you want which you want to show in marketing involves leading and innovating to
+                    create
+                    new trends that resonate with
+                    with your fashion.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="client_section layout_padding">
+            <div class="container">
+                <div class="heading_container heading_center">
+                    <h2>What says our client</h2>
+                </div>
+                <div class="carousel slide" id="carouselExampleControls" data-ride:="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="images/client.jpg" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <h4>Minim Valett</h4>
+                                    <p>In a general way, fashion relates to the trend that you or anyone follow right from dresses to walk.
+                                        ... So if still you want which you want to show in marketing involves leading and innovating to
+                                        create
+                                        new trends that resonate with
+                                        with your fashion.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel_btn-box">
+                        <a href="#carouselExampleControls" class="carousel-control-prev" role="button"
+                            data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a href="#carouselExampleControls" class="carousel-control-next" role="button"
+                            data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of client section -->
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            
+            <h2>Meet our team <br>
+                <br>Teamwork makes the dream work</h2>
+            <div class="col-md-3">
+                <img id="red" src="t1.jpg" style="width: 100%; margin-bottom: 10%;">
+                <h5>Blessy</h5>
+                <P>FOUNDER</P>
+            </div>
+            <div class="col-md-3">
+                <img id="red" src="t2.jpg" style="width: 100%; margin-bottom: 10%;">
+                <h5>Mia Foster</h5>
+                <p>FASHION DESIGNER</p>
+            </div>
+            <div class="col-md-3">
+                <img id="red" src="t3.jpg" style="width: 100%; margin-bottom: 10%;">
+                <h5>Lily Morgan</h5>
+                <p>STYLE CURATOR</p>
+            </div>
+            <div class="col-md-3">
+                <img id="red" src="t4.jpg" style="width: 100%; margin-bottom: 10%;">
+                <h5>Sebastian carter</h5>
+                <p>FASHION STYLIST</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card text-bg-dark">
+            <img src="image06-copyright.jpg" data-aos-duration="1000px" data-aos="zoom-in" data-aos="fade-left"
+                data-aos="fade-right" class="card-img" height="500px">
+            <div class="card-img-overlay" id="pink">
+
+                <h4> / Get Started</h4>
+                <h5>Quality is Remembered Long After <br>Price is Forgotten
+                    Fashion means a popular trend or a style, especially when it comes to clothing.
+                </h5>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-link">
+                <h2>Nancy Fashion</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+                <ul class="social-icon">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>Featured Links</h2>
+                <ul class="footer-menu">
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Dressing Style</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> 3D designing</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Cat Walk</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i>Fashion Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>Contact Info</h2>
+                <ul class="footer-contact">
+                    <li><i class="fa fa-envelope-o"></i> <span>E-mail: <a href="mailto:info@dezven.com" style="color: #fff;">info@dezven.com</a></span></li>
+                    <li><i class="fa fa-whatsapp"></i> <span>What-App: +91 -123 456 789</span></li>
+                    <li><i class="fa fa-fax"></i> <span>Contact No.: +91 -123 4567890</span></li>
+                    <li><i class="fa fa-globe"></i> <span>Website: <a href="https://www.dezven.com" style="color: #fff;">https://www.dezven.com</a></span></li>
+                </ul>
+            </div>
+            <div class="footer-link newsletter">
+                <h2>Newsletter</h2>
+                <p>Welcome To Fashion Fashion-Designing</p>
+                <input type="text" name="email" placeholder="E-mail">
+                <button>Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!---------- Footer HTML Ends ---------->
+   
+</body>
+
+</html>
